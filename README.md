@@ -13,11 +13,11 @@ MUBA Blockchain Hackathon 2026 · Sui Track 01 (Payments & Stablecoins) · Gonka
 
 <p align="center">
   <img src="https://img.shields.io/badge/🏅_SUI-Honourable_Mention-4DA2FF?style=for-the-badge" alt="SUI - Honourable Mention" />
-  <img src="https://img.shields.io/badge/🏅_GonkaRouter_(AI_for_Society_Good)-11th–20th_place%2C_3_months_of_free_credits-10B981?style=for-the-badge" alt="GonkaRouter (AI for Society Good) - 11th–20th place, 3 months of free credits" />
+  <img src="https://img.shields.io/badge/🏅_GonkaRouter_(AI_for_Society_Good)-11th–20th_place-10B981?style=for-the-badge" alt="GonkaRouter (AI for Society Good) - 11th–20th place" />
 </p>
 
 **🏅 SUI - Honourable Mention**  
-**🏅 GonkaRouter (AI for Society Good) - 11th–20th place, 3 months of free credits**
+**🏅 GonkaRouter (AI for Society Good) - 11th–20th place**
 
 </div>
 
