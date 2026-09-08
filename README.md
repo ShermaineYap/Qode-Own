@@ -11,6 +11,14 @@ and the chain enforces them when she is not.**
 
 MUBA Blockchain Hackathon 2026 · Sui Track 01 (Payments & Stablecoins) · Gonka (AI for Society)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/🏅_SUI-Honourable_Mention-4DA2FF?style=for-the-badge" alt="SUI - Honourable Mention" />
+  <img src="https://img.shields.io/badge/🏅_GonkaRouter_(AI_for_Society_Good)-11th–20th_place%2C_3_months_of_free_credits-10B981?style=for-the-badge" alt="GonkaRouter (AI for Society Good) - 11th–20th place, 3 months of free credits" />
+</p>
+
+**🏅 SUI - Honourable Mention**  
+**🏅 GonkaRouter (AI for Society Good) - 11th–20th place, 3 months of free credits**
+
 </div>
 
 ---
@@ -23,53 +31,17 @@ MUBA Blockchain Hackathon 2026 · Sui Track 01 (Payments & Stablecoins) · Gonka
 
 ## Executive summary
 
-Elder financial scams are not a detection problem but an **authority** problem: by the
-time money moves, the victim has usually already been warned, and sends it anyway
-because someone she trusts — or someone impersonating them — is telling her to. That
-authority cannot rest with her, because she is being manipulated right now, nor with
-her family, who are themselves a documented vector for elder financial abuse — so it
-rests with rules she set while calm. SHOU pairs a **Chrome extension** that passively
-scores her conversations inside a TEE with an **on-chain policy** that decides how her
-money behaves, and the AI's verdict is a floor rather than a ceiling — it can tighten
-her limits, never loosen them. Tell the contract a large transfer is low-risk and it
-escalates anyway, which is why nobody has to trust our model.
+Elder financial scams are an **authority** problem, not a detection problem: victims are manipulated into sending money voluntarily despite warnings. SHOU solves this by coupling a **Chrome extension** that passively scores chat risk inside a TEE with an **on-chain Move policy** configured while calm. The AI verdict serves as a floor, never a ceiling—it can tighten spending limits, never loosen them.
 
 ---
 
 ## Problem
 
-**She isn't hacked. She's talked into sending it herself — "manufactured consent."**
+**Victims aren't hacked—they are manipulated into sending money voluntarily ("manufactured consent").**
 
-1. **RM2.97 billion lost to scams in just 11 months of 2025** (67,735 cases). Bank
-   Negara Malaysia's 2025 Annual Report puts **95% of Malaysia's online fraud cases**
-   as **"authorised transactions"** — the victim approved the transfer herself, no key
-   stolen. Bukit Aman CCID logged **RM3.11 billion** in total commercial crime losses
-   for 2024 alone, **RM2.45 billion** of it fraud across 37,240 investigation papers.
-   Seniors are the sharpest edge of that curve: only **6.4% of victims** (5,533 of
-   86,266, 2021–2023) but **20% of total losses** (RM552.5M of RM2.7B) — and by mid-2024
-   that gap had widened to **8.3% of victims vs. 27.7% of losses**.
-
-2. **RM1.47 billion from investment scams alone — over half of all losses.** Investment
-   scam losses jumped from RM848.6M (6,337 cases) in 2024 to **RM1.47B (9,603 cases) in
-   2025**, a ~73% year-over-year rise, with syndicates moving victims from Facebook/
-   Instagram into WhatsApp or Telegram "trading groups" before blocking withdrawals.
-   Love scams cost **RM45.9M in 2024** (up from RM43.9M in 2023), 75.6% of victims
-   women 61+, and **370 cases started on Facebook, 332 on WhatsApp in 2023** — the two
-   most common contact points. The US shows the same shape: FBI IC3 logged
-   **147,000+ complaints** from adults 60+ in 2024 — more than any other age group —
-   for **$4.8–4.9B, up 43% YoY**, averaging **$83,000 per victim**.
-
-3. **70% of victims never report — real losses may hit RM54 billion.** And what does
-   get spent goes to the wrong category: banks blocked **RM383M** in fraudulent
-   transactions in 2023 alone (**RM780M+** combined 2023–2024), and the National Scam
-   Response Centre froze **162,642 mule accounts** in the latest reporting year — none
-   of it touching the 95% "authorised transaction" category, because it's all built to
-   catch stolen credentials, not manufactured consent. Once sent, instant payment rails
-   move funds irreversibly within seconds, and no existing tool sits at that exact
-   point: ScamShield/Truecaller warn on known numbers but go silent once a chat moves
-   to WhatsApp; BioCatch reads banking-session hesitation, not the conversation that
-   caused it. **Nobody else sits in the top-right — blocking it before, at the moment
-   money is given away.**
+1. **95% of fraud is "authorised":** Bank Negara Malaysia reports that 95% of online fraud cases involve victims authorizing transfers themselves. Conventional security built to catch stolen credentials completely fails here.
+2. **Seniors suffer disproportionately:** Despite making up under 10% of victims, older adults absorb nearly 28% of total financial scam losses (over RM1.47B in investment scams alone, primarily coordinated through WhatsApp and Telegram).
+3. **No existing tool intervenes at the moment of payment:** Caller-ID tools lose visibility once conversations move to chat apps, and banks monitor device sessions rather than manipulative chats. Instant payment rails move funds irreversibly within seconds.
 
 ---
 
@@ -252,54 +224,21 @@ or unavailable model raises risk to MEDIUM rather than silently clearing a trans
 
 ## Business model
 
-**The buyer is the bank or e-wallet, not the elder** — regulation turned scam losses
-into a direct balance-sheet cost.
+**B2B / Enterprise model:** The buyers are banks and e-wallets, not end users—regulatory mandates now hold financial institutions directly liable for scam losses.
 
-- **Target buyers (Malaysia):** ~48 licensed banks + ~47 licensed e-money issuers
-  (BNM) = **~95 enterprise buyers**, serving **3.9 million** Malaysians aged 60+ (DOSM).
-- **Market size:** SAM of ~1.5–2 million digitally-active senior accounts
-  (**RM144M–192M/yr** at the Core tier); realistic SOM of 50,000–100,000 accounts in
-  Year 1–2 via 3–5 pilot banks (**RM4.8M–9.6M ARR**).
-- **Pricing — Per Active Guarded Account (PAGA):** Standard RM6/mo, Core RM8/mo,
-  Premium RM12/mo — following the active-account pricing norm set by BioCatch/SHIELD.
-- **Unit cost:** ~**RM2.00/account/month**, blended from published 2025/26 rate cards
-  (Gonka-class LLM inference, AWS Nitro EC2, Sui gas, WhatsApp Business API messaging)
-  — nothing invented.
-- **Gross margin:** 67% (Standard) → 83% (Premium); target 75–80% at the Core tier,
-  in line with standard SaaS benchmarks.
-- **The pitch:** a single UK-style reimbursement claim costs a bank up to
-  **RM463,000 (£85,000)**. At RM8/account/month (RM96/year), that claim value covers
-  **4,800+ guarded-account-years** of protection. A bank isn't buying software — it's
-  buying an insurance policy that costs less than the deductible.
-- **Buying trigger:** Malaysia's 2026 e-wallet compensation rule (7-working-day
-  reimbursement, applies even with partial victim fault) plus SEFT shared-accountability
-  enforcement since October 2024 — an active, budgeted mandate, not a hypothetical need.
+- **Target market:** ~95 licensed banks and e-money issuers in Malaysia, protecting 3.9M+ older adults.
+- **Pricing:** Per Active Guarded Account (PAGA) model (RM6–RM12/account/month) targeting 75–80% gross margins.
+- **Value proposition:** Preventing a single fraud reimbursement claim (£85,000 / ~RM460,000) funds thousands of guarded-account-years of protection. SHOU acts as balance-sheet fraud insurance.
+- **Regulatory catalyst:** Active mandates—such as Malaysia's 7-day reimbursement rule, Singapore's SRF, and the UK's 50/50 liability split—force institutions to budget for preventative solutions.
 
 ---
 
 ## Regulatory & compliance
 
-- **Malaysia:** BNM's 2026 rule requires e-wallet providers to fully compensate scam
-  victims within **7 working days** if fraud safeguards weren't met — even where the
-  victim is partly responsible (announced by PM Anwar Ibrahim in Parliament). SEFT's
-  shared-accountability regime has applied since October 2024.
-- **Singapore's Shared Responsibility Framework** (live 16 Dec 2024): banks bear the
-  **full** scam loss if they breached a duty — including real-time fraud surveillance
-  and a post-login cooling-off period — with **no liability cap**.
-- **UK PSR APP fraud regime** (live 7 Oct 2024): sending and receiving banks split
-  losses **50/50**, mandatory reimbursement within **5 business days**, up to
-  **£85,000** per claim, covering 99.8% of claims by volume.
-- **Licensing posture:** SHOU is a technology partner, not a bank or e-wallet — no
-  banking licence required. Licensed financial institutions retain responsibility for
-  KYC, AML and transaction monitoring under BNM's rules.
-- **Data privacy (PDPA):** messages are redacted and scored on the user's device and
-  inside the enclave; banks receive a risk tier and signature, **never the message
-  content** — no PDPA exposure on our side.
-- **Custody position:** non-custodial by construction — `AdminCap` appears nowhere in
-  `policy.move`, keeping SHOU outside money-transmitter treatment.
-- **WhatsApp ToS:** the prototype reads WhatsApp Web's DOM for demo purposes only,
-  which is not ToS-compliant for production; the commercial path is the official
-  **WhatsApp Business API**, stated openly rather than glossed over.
+- **Shared responsibility regimes:** Strict global and regional compensation frameworks (Malaysia's 2026 7-day reimbursement rule, Singapore SRF, UK PSR) shift fraud loss liability directly onto institutions, making pre-transaction prevention mandatory.
+- **Non-custodial & no licensing needed:** SHOU operates strictly as a technology partner rather than an e-wallet or bank. User funds remain non-custodial (`AdminCap` does not exist in `policy.move`).
+- **Data privacy & PDPA:** Messages are redacted on-device and scored inside an isolated enclave. Banks and contracts only receive cryptographic risk tiers and signatures—never raw chat content.
+- **Production path:** Prototype reads DOM for demo purposes; production commercial deployment integrates via the official WhatsApp Business API.
 
 ---
 
