@@ -4,10 +4,7 @@
 
 **S**cam-**H**alting **O**n-chain **U**tility
 
-`守` — *shǒu*, to guard, to keep watch over.
-
-**A Chrome extension that monitors scams passively on WhatsApp and Telegram, backed-up by a stablecoin wallet whose owner writes her own spending rules while she is calm,
-and the chain enforces them when she is not.**
+**A Chrome extension that monitors scams passively on WhatsApp and Telegram, backed-up by a stablecoin wallet whose owner self-define spending rules while she is calm, and the chain enforces them when she is not.**
 
 MUBA Blockchain Hackathon 2026 · Sui Track 01 (Payments & Stablecoins) · Gonka (AI for Society)
 
@@ -15,9 +12,6 @@ MUBA Blockchain Hackathon 2026 · Sui Track 01 (Payments & Stablecoins) · Gonka
   <img src="https://img.shields.io/badge/🏅_SUI-Honourable_Mention-4DA2FF?style=for-the-badge" alt="SUI - Honourable Mention" />
   <img src="https://img.shields.io/badge/🏅_GonkaRouter_(AI_for_Society_Good)-11th–20th_place-10B981?style=for-the-badge" alt="GonkaRouter (AI for Society Good) - 11th–20th place" />
 </p>
-
-**🏅 SUI - Honourable Mention**  
-**🏅 GonkaRouter (AI for Society Good) - 11th–20th place**
 
 </div>
 
